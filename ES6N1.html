@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class OnlineShop{
+           shopping() {return '网店购物'}
+       }
+       class Bookshop{
+           browse() {return '浏览图书目录'; }
+       }
+       let stu = new Bookshop();
+       console.log(stu.browse());
+       console.log(stu.shopping());
+       class BuyBook {
+           purchase() { return '购买图书';}
+       }
+       Object.assign(BookShop.prototype,{Buy:BuyBook.prototype.purchase});
+       console.log(bookshop.purshase());
+    </script>
+</body>
+</html>
